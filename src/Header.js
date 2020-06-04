@@ -27,14 +27,14 @@ export class Header extends Component {
         let homeDisp;
         let profileDisp;
         if (this.state.home) {
-            homeDisp = <li><a href="#" onClick={this.homeSelect} className="selected">Home</a></li>; 
+            homeDisp = <li><button onClick={this.homeSelect} className="selected">Home</button></li>; 
         } else {
-            homeDisp = <li><a href="#" onClick={this.homeSelect}>Home</a></li>; 
+            homeDisp = <li><button onClick={this.homeSelect}>Home</button></li>; 
         }
         if (this.state.profile) {
-            profileDisp = <li><a href="#" onClick={this.profileSelect} className="selected">Profile</a></li>; 
+            profileDisp = <li><button onClick={this.profileSelect} className="selected">Profile</button></li>; 
         } else {
-            profileDisp = <li><a href="#" onClick={this.profileSelect}>Profile</a></li>; 
+            profileDisp = <li><button onClick={this.profileSelect}>Profile</button></li>; 
         }
         return (
             <div className="header">
