@@ -24,7 +24,6 @@ export class Content extends Component {
     render() {
         return (
             <div>
-                content
                 <Feed detail1={this.state.content1} detail2={this.state.content2} clickFeed={this.method1}/>
             </div>
         )

@@ -17,10 +17,12 @@ export class Header extends Component {
 
     homeSelect = () => {
         this.setState({home: true, profile: false});
+        this.props.clickPage("content");
     }
 
     profileSelect = () => {
         this.setState({home: false, profile: true});
+        this.props.clickPage("profile");
     }
     
     render() {
